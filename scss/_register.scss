@@ -1,0 +1,179 @@
+.register {
+    background-color: #F4F8FA;
+}
+
+.register__wrapper {
+    padding-top: 115px;
+    padding-bottom: 144px;
+
+}
+
+.register {
+    background-image: url('../image/fone.svg');
+    background-repeat: no-repeat;
+    background-size: 1191px 1017px;
+    background-position: 90% 0;
+}
+
+
+.register__partner {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.register__description {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 576px;
+    max-width: 576px;
+}
+
+.register__title {
+    font-family: RF Dewi Extended;
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 67.2px;
+    color: #262931;
+    margin-bottom: 56px;
+    display: block;
+    max-width: 576px;
+}
+
+.register__noreg {
+    text-align: center;
+}
+
+.register__title:not(span) {
+    text-wrap: nowrap;
+}
+
+
+.register__title span {
+    color: #0176FF;
+}
+
+.register__subtitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: #61636D;
+    margin-bottom: 56px;
+}
+
+.register__subtitle span {
+    font-weight: 600;
+}
+
+.register__button {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 16px 32px;
+    background: #0176FF;
+    border-radius: 72px;
+    max-width: 202px;
+}
+
+.register__info {
+    background: #ffffff;
+    box-shadow: 0px 12px 32px 0px #3249551A;
+    padding: 40px 48px;
+    border-radius: 30px;
+}
+
+.register__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 0 1 485px;
+}
+
+
+.register__field-h3 {
+    font-family: RF Dewi Extended;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21.6px;
+    color: #262931;
+    text-align: center;
+}
+
+#login {
+    border-radius: 30px;
+    border: 1px solid #C4C7CF;
+    padding: 16px 8px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#password {
+    border-radius: 30px;
+    border: 1px solid #C4C7CF;
+    padding: 16px 8px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+::placeholder {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A9ABB6;
+}
+
+.airs {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+}
+
+.register__password {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.register__recovery {
+    color: #9FA1AD;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    display: inline-block;
+}
+
+.register__enter {
+    display: block;
+    margin: 0 auto;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #262931;
+    padding: 16px 40px;
+    border-radius: 72px;
+    border: 1px solid #0176FF;
+    background: none;
+    margin-bottom: 16px;
+}
+
+.register__enter>span {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #9FA1AD;
+}
+
+.register__link {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #0176FF;
+}

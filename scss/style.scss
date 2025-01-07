@@ -1,0 +1,17 @@
+@use "./header";
+@use "./register";
+@use "./about-project.scss";
+@use "./about-work";
+
+body {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    color: #61636D;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 10px;
+}
