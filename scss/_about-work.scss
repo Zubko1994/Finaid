@@ -1,3 +1,126 @@
+.about-work {
+    background-color: #F4F8FA;
+}
+
 .about-work__wrapper {
     padding: 144px 0 144px 0;
+}
+
+.about-work__title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #262931;
+    margin-bottom: 64px;
+}
+
+.about-work__title span {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #0176FF;
+}
+
+.scheme {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 50px;
+    justify-content: flex-end;
+    max-height: 576px;
+    padding: 40px 0 60px 0;
+    margin-bottom: 92px;
+}
+
+.scheme__title {
+    font-family: RF Dewi Extended;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21.6px;
+    color: #262931;
+    margin-bottom: 12px;
+}
+
+.scheme__subtitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #61636D;
+}
+
+.scheme__stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 160px;
+}
+
+.scheme__stage img {
+    max-width: 260px;
+}
+
+.stage-one {
+    max-width: 257px;
+}
+
+.stage-three {
+    max-width: 205px;
+}
+
+.stage-last {
+    max-width: 211px;
+}
+
+.step-one {
+    position: relative;
+}
+
+.step-one::after {
+    content: url("../image/linean.png");
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    max-width: 93px;
+}
+
+.step-two {
+    position: relative;
+}
+
+.step-two::after {
+    content: url("../image/strela.png");
+    position: absolute;
+    max-width: 179px;
+    max-height: 111px;
+    top: 58%;
+    left: 90%;
+}
+
+.step-three {
+    position: relative;
+}
+
+.step-three::after {
+    content: url("../image/last line.svg");
+    position: absolute;
+    max-width: 151px;
+    max-height: 87px;
+    top: 60%;
+    left: 78%;
+}
+
+.about-work__button {
+    border-radius: 72px;
+    background-color: #0176FF;
+    color: #ffffff;
+    padding: 16px 32px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 auto;
+    display: block;
 }
