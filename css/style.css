@@ -60,13 +60,14 @@
 
 .register__title {
   font-family: RF Dewi Extended;
-  font-size: 47px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 67.2px;
   color: #262931;
   margin-bottom: 56px;
   display: block;
   max-width: 576px;
+  word-break: break-all;
 }
 
 .register__noreg {
@@ -447,6 +448,179 @@
 .about-cripta__wrapper img {
   display: block;
   margin: 0 auto;
+}
+
+.start-earn {
+  background-color: #0176FF;
+  background-image: url("../image/line fone blue.svg");
+  background-repeat: no-repeat;
+  background-size: 877px 748px;
+  background-position: 1530px -142px;
+}
+
+.start-earn__wrapper {
+  padding: 48px 0 48px 0;
+}
+
+.start-earn__title {
+  font-family: RF Dewi Extended;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-wrap: balance;
+}
+
+.start-earn__title span {
+  color: #FBDC7C;
+}
+
+.start-earn__subtitle {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #ffffff;
+  text-wrap: balance;
+  margin-bottom: 40px;
+}
+
+.start-earn__subtitle span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+}
+
+.start-earn__button {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #262931;
+  padding: 16px 32px;
+  border-radius: 72px;
+  margin-right: 24px;
+}
+
+.start-earn__wrapper a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.support {
+  background-color: #F4F8FA;
+  background-image: url("../image/dropped.png");
+  background-repeat: no-repeat;
+  background-size: 725px 717px;
+  background-position: 50% 70%;
+}
+
+.support__wrapper {
+  padding: 166px 21px;
+}
+
+.edge__list {
+  display: flex;
+  gap: 64px;
+}
+
+.support__title {
+  font-family: RF Dewi Extended;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.support__title span {
+  color: #0176FF;
+}
+
+.support__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.support__benefit {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #61636D;
+  text-align: right;
+}
+
+.support__benefit span {
+  font-weight: 600;
+  color: #262931;
+}
+
+.privilege-item {
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.item__four {
+  text-wrap: balance;
+}
+
+.item__five {
+  text-wrap: balance;
+  position: relative;
+  left: 25px;
+  width: 296px;
+}
+
+.benefit-second {
+  position: relative;
+  right: 25px;
+  text-wrap: pretty;
+  max-width: 237px;
+}
+
+.study {
+  background-color: #F4F8FA;
+}
+
+.study__wrapper {
+  padding: 21px 0 124px 0;
+}
+
+.study__title {
+  font-family: RF Dewi Extended;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #262931;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.study__title span {
+  color: #0176FF;
+}
+
+.study__video {
+  margin: 0 auto;
+  display: block;
+}
+
+.quastion {
+  background-color: #F4F8FA;
+}
+
+.quastion__wrapper {
+  padding: 20px 0 120px 0;
 }
 
 body {

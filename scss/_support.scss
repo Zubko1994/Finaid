@@ -1,0 +1,78 @@
+.support {
+    background-color: #F4F8FA;
+    background-image: url('../image/dropped.png');
+    background-repeat: no-repeat;
+    background-size: 725px 717px;
+    background-position: 50% 70%;
+}
+
+.support__wrapper {
+    padding: 166px 21px;
+}
+
+.edge__list {
+    display: flex;
+    gap: 64px;
+}
+
+.support__title {
+    font-family: RF Dewi Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 56px;
+
+}
+
+.support__title span {
+    color: #0176FF;
+}
+
+.support__advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.support__benefit {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #61636D;
+    text-align: right;
+}
+
+.support__benefit span {
+    font-weight: 600;
+    color: #262931;
+}
+
+.privilege-item {
+    text-align: left;
+    text-wrap: pretty;
+}
+
+.item__four {
+    text-wrap: balance;
+}
+
+.item__five {
+    text-wrap: balance;
+    position: relative;
+    left: 25px;
+    width: 296px;
+}
+
+
+.benefit-second {
+    position: relative;
+    right: 25px;
+    text-wrap: pretty;
+    max-width: 237px;
+}
+

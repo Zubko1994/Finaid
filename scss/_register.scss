@@ -31,13 +31,14 @@
 
 .register__title {
     font-family: RF Dewi Extended;
-    font-size: 47px;
+    font-size: 56px;
     font-weight: 800;
     line-height: 67.2px;
     color: #262931;
     margin-bottom: 56px;
     display: block;
     max-width: 576px;
+    word-break: break-all;
 }
 
 .register__noreg {
