@@ -213,6 +213,11 @@
   color: #0176FF;
 }
 
+.test {
+  padding: 0 0;
+  margin: 15px 15px;
+}
+
 .about-project {
   background-image: url("../image/fonelinet.svg");
   background-repeat: repeat-x;
