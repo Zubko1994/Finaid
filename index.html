@@ -178,30 +178,107 @@
     <section class="quastion">
         <div class="container">
             <div class="quastion__wrapper">
-                <h2 class="quastion__title">Ответы на вопросы</h2>
+                <h2 class="quastion__title"><span>Ответы</span> на вопросы</h2>
                 <div class="quastion__form">
                     <div class="quastion__list">
-                        <div class="quastion__item">
-                            <h4 class="quastion__title">Как я могу зарегистрировать своих клиентов в системе?</h4>
-                            <hr>
+                        <details class="quastion__item" open>
+                            <summary class="quastion__describe">Как я могу зарегистрировать своих клиентов в системе?</summary>
+                            <hr class="quastion__line">
                             <p class="quastion__subtitle">Для регистрации клиентов в системе необходимо выполнить следующие шаги:</p>
                             <ol class="answer-list">
                                 <li class="answer-list__item">Авторизоваться в личном кабинете.</li>
                                 <li class="answer-list__item">Перейти в раздел "Мои клиенты".</li>
                                 <li class="answer-list__item">Нажать на кнопку "Добавить клиента".</li>
-                                <li class="answer-list__item">Заполнить необходимую информацию о клиенте, такую как ФИО, контактные данные, информацию о доходах и т.д</li>
+                                <li class="answer-list__item">Заполнить необходимую информацию о клиенте, такую как ФИО, контактные данные,
+                                информацию о доходах и т.д</li>
                                 <li class="answer-list__item">Нажать на кнопку "Сохранить".</li>
                                 <li class="answer-list__item">Карточка нового клиента будет отображаться в списке "Мои клиенты".</li>
                             </ol>
-                        </div>
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Могут ли мои клиенты стать партнерами?</summary>
+                            <hr class="quastion__line">                           
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Сколько времени занимает перечисление доходов моим партнерам?</summary>
+                            <hr class="quastion__line">
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Как я могу получить дополнительную поддержку или помощь в работе с системой?</summary>
+                            <hr class="quastion__line">
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Как долго регистрируется клиент в системе?</summary>
+                            <hr class="quastion__line">
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Есть ли требования к клиентам для использования сервиса?</summary>
+                            <hr class="quastion__line">
+                        </details>
+                        <details class="quastion__item">
+                            <summary class="quastion__describe">Как прекратить сотрудничество с Finaid?</summary>
+                            <hr class="quastion__line">
+                        </details>
                     </div>
-                    <form action="">
-
+                    <form class="quastion__info" action="#">
+                        <h3 class="quastion__form-title">Остались вопросы?</h3>
+                        <p class="quastion__form-subtitle">Введите своё имя и телефон. Мы свяжемся с вами в течение 2 часов</p>
+                        <div class="quastion__record">
+                            <input class="name" type="text" placeholder="Ваше имя" required>
+                            <input class="tel" type="tel" placeholder="+375 (_ _)  _ _ _ - _ _ - _ _" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <textarea class="message-text" name="message" id="message" placeholder="Текст сообщения.." required></textarea>
+                            <button class="quastion__button">Отправить</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__menu">
+                    <div>
+                        <a href="#" class="logo logo__footer"><img src="./image/logo.svg" alt="logo"></a>
+                        <span class="logo__info">Copyright © 2023 finaid</span>
+                    </div>
+                    <nav>
+                        <ul class="footer__navigation">
+                            <li class="footer__menu-item">О компании</li>
+                            <li class="footer__menu-item">Как это работает?</li>
+                            <li class="footer__menu-item">Для сотрудничества</li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="footer__navigation">
+                            <li class="footer__menu-item">О Криптовалюте</li>
+                            <li class="footer__menu-item">Поддержка</li>
+                            <li class="footer__menu-item">FAQ</li>
+                        </ul>
+                    </nav>
+                    <div class="footer__info">
+                        <a class="authorization" href="#">
+                            <img src="./image/avtorisacia.svg" alt="иконка авторизации">
+                            <span>Авторизация</span>
+                        </a>
+                        <a href="tel:+ 375(44) 121 12 12" class="footer__tel">
+                            <img src="./image/smartphone.svg" alt="иконка телефона">
+                            + 375(44) 121 12 12
+                        </a>
+                        <a href="mailto:Moneyfinaid@gmail.com" class="footer__email">
+                            <img src="./image/message.svg" alt="иконка сообщения">
+                            Moneyfinaid@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__document">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Публичная оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

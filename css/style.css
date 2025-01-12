@@ -623,6 +623,256 @@
   padding: 20px 0 120px 0;
 }
 
+.quastion__title {
+  font-family: RF Dewi Extended;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #262931;
+  margin-bottom: 48px;
+}
+
+.quastion__title span {
+  color: #0176FF;
+}
+
+.quastion__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 682px;
+}
+
+.quastion__describe {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #262931;
+}
+
+.quastion__item {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.quastion__line {
+  border: solid 1px #DCDDE5;
+  margin-bottom: 16px;
+}
+
+.quastion__subtitle {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #262931;
+}
+
+.answer-list {
+  padding-left: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #262931;
+}
+
+details > summary {
+  list-style: none;
+  position: relative;
+}
+
+summary:before {
+  content: url("../image/icon_close.svg");
+  margin-right: 24px;
+}
+
+details[open] summary:before {
+  content: url("../image/detail_open.svg");
+}
+
+details[open] .quastion__describe {
+  margin-bottom: 16px;
+}
+
+summary:before,
+details[open] summary:before {
+  position: absolute;
+  left: 624px;
+}
+
+.quastion__info {
+  padding: 40px 48px 40px 48px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 12px 32px 0px rgba(50, 73, 85, 0.1019607843);
+  max-height: 494px;
+  margin-top: 35px;
+}
+
+.quastion__form {
+  display: flex;
+  gap: 32px;
+}
+
+.quastion__form-title {
+  font-family: RF Dewi Extended;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21.6px;
+  color: #262931;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.quastion__form-subtitle {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #61636D;
+  margin-bottom: 32px;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.quastion__record {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.quastion__record .name {
+  display: block;
+  border: 1px solid #C4C7CF;
+  padding: 16px 20px;
+  border-radius: 30px;
+}
+.quastion__record .name::-moz-placeholder {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #A9ABB6;
+}
+.quastion__record .name::placeholder {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #A9ABB6;
+}
+
+.tel {
+  display: block;
+  border: 1px solid #C4C7CF;
+  padding: 16px 20px;
+  border-radius: 30px;
+}
+
+.message-text {
+  display: block;
+  border: 1px solid #C4C7CF;
+  border-radius: 30px;
+  padding: 16px 8px 8px 20px;
+  resize: none;
+}
+
+.quastion__button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #0176FF;
+  border-radius: 72px;
+  color: #262931;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background: #ffffff;
+  padding: 16px 40px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+
+.footer__wrapper {
+  padding: 56px 0 56px 0;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo__info {
+  display: block;
+}
+
+.logo__footer {
+  display: block;
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #9FA1AD;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__navigation > li {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #61636D;
+  cursor: pointer;
+}
+
+.footer__info > a {
+  display: block;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #262931;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__document a {
+  display: block;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #9FA1AD;
+}
+
+.footer__document {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
 body {
   font-family: Inter;
   font-weight: 400;
