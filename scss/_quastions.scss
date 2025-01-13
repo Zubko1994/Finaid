@@ -132,6 +132,7 @@ details[open] summary:before {
             border: 1px solid #C4C7CF;
             padding: 16px 20px;
             border-radius: 30px;
+            cursor: pointer;
 
             &::placeholder {
                 font-family: Inter;
@@ -143,11 +144,46 @@ details[open] summary:before {
         }
 }
 
+.quastion__record {
+    & .name:hover {
+        border: 1px solid #61636D;
+    }
+}
+
+.quastion__record {
+    & .name:focus {
+        border: 1px solid #006DCA;
+        box-shadow: 0px 0px 0px 3px #008FF833;
+    }
+}
+
+.quastion__record {
+    & .name:invalid {
+        border: 1px solid #EE5656;
+        box-shadow: 0px 0px 0px 3px #FF7D8933;
+    }
+}
+
 .tel {
     display: block;
     border: 1px solid #C4C7CF;
     padding: 16px 20px;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.tel:hover {
+    border: 1px solid #61636D;
+}
+
+.tel:focus {
+    border: 1px solid #006DCA;
+    box-shadow: 0px 0px 0px 3px #008FF833;
+}
+
+.tel:invalid {
+    border: 1px solid #EE5656;
+    box-shadow: 0px 0px 0px 3px #FF7D8933;
 }
 
 .message-text {
@@ -157,6 +193,21 @@ details[open] summary:before {
     padding: 16px 8px 8px 20px;
     resize: none;
 }
+
+.message-text:hover {
+    border: 1px solid #61636D;
+}
+
+.message-text:focus {
+    border: 1px solid #006DCA;
+    box-shadow: 0px 0px 0px 3px #008FF833;
+}
+
+.message-text:invalid {
+    border: 1px solid #EE5656;
+    box-shadow: 0px 0px 0px 3px #FF7D8933;
+}
+
 
 .quastion__button {
     display: block;
@@ -171,4 +222,15 @@ details[open] summary:before {
     background: #ffffff;
     padding: 16px 40px;
     cursor: pointer;
+}
+
+.quastion__button:hover {
+    background: #0176FF;
+    color: #ffffff;
+    border: 1px solid #0176FF;
+}
+
+.quastion__button:active {
+    background: #1471DE;
+    box-shadow: 0px 0px 10px 0px #1B5396 inset;
 }

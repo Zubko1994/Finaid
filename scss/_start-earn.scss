@@ -50,6 +50,15 @@
     padding: 16px 32px;
     border-radius: 72px;
     margin-right: 24px;
+    cursor: pointer;
+}
+
+.start-earn__button:hover {
+    box-shadow: 0px 8px 16px 0px #3249554D;
+}
+
+.start-earn__button:active {
+    box-shadow: 0px 0px 10px 0px #1B539699 inset;
 }
 
 .start-earn__wrapper a {
@@ -60,6 +69,9 @@
     color: #ffffff;
 }
 
+.start-earn__wrapper a:hover {
+    color: #dce2e9;
+}
 
 
 

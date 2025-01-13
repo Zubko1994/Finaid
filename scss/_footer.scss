@@ -47,19 +47,38 @@
     cursor: pointer;
 }
 
-.footer__info > a {
+.footer__menu-item:hover {
+    color: #262931;
+}
+
+.footer__menu-item:active {
+    color: #262931;
+}
+
+.footer__info  > a:not(.authorization)  {
     display: block;
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
     color: #262931;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__info > a:hover {
+    color: #000000;
+}
+
+.footer__info>a:active {
+    color: #000000;
 }
 
 .footer__info {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: flex-start;
 }
 
 .footer__document a {
@@ -71,11 +90,17 @@
     color: #9FA1AD;
 }
 
+.footer__document a:hover {
+    color: #262931;
+}
+
 .footer__document {
     display: flex;
     gap: 48px;
     justify-content: center;
 }
+
+
 
 
 

@@ -77,6 +77,16 @@
     background: #0176FF;
     border-radius: 72px;
     max-width: 202px;
+    cursor: pointer;
+}
+
+.register__button:hover {
+    background-color: #1471DE;
+    box-shadow: 0px 4px 20px 0px #106DD980;
+}
+
+.register__button:active {
+    box-shadow: 0px 0px 10px 0px #1B5396 inset;
 }
 
 .register__info {
@@ -109,7 +119,23 @@
     padding: 16px 8px;
     width: 100%;
     margin-bottom: 24px;
+    cursor: pointer;
 }
+
+#login:hover {
+    border: 1px solid #61636D;
+}
+
+#login:focus {
+    border: 1px solid #006DCA;
+    box-shadow: 0px 0px 0px 3px #008FF833;
+}
+
+#login:invalid {
+    border: 1px solid #EE5656;
+    box-shadow: 0px 0px 0px 3px #FF7D8933;
+}
+
 
 #password {
     border-radius: 30px;
@@ -117,6 +143,21 @@
     padding: 16px 8px;
     width: 100%;
     margin-bottom: 8px;
+    cursor: pointer;
+}
+
+#password:hover {
+    border: 1px solid #61636D;
+}
+
+#password:focus {
+    border: 1px solid #006DCA;
+    box-shadow: 0px 0px 0px 3px #008FF833;
+}
+
+#password:invalid {
+    border: 1px solid #EE5656;
+    box-shadow: 0px 0px 0px 3px #FF7D8933;
 }
 
 ::placeholder {
@@ -146,6 +187,15 @@
     font-weight: 400;
     line-height: 19.36px;
     display: inline-block;
+    cursor: pointer;
+}
+
+.register__recovery:active {
+    color: #262931;
+}
+
+.register__recovery:hover {
+    color: #262931;
 }
 
 .register__enter {
@@ -163,7 +213,17 @@
     margin-bottom: 16px;
 }
 
-.register__enter>span {
+.register__enter:hover {
+    background-color: #0176FF;
+    color: #ffffff;
+}
+
+.register__enter:active {
+    background-color: #1471DE;
+    box-shadow: 0px 0px 10px 0px #1B5396 inset;
+}
+
+.register__enter > span {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -177,6 +237,15 @@
     font-weight: 400;
     line-height: 19.36px;
     color: #0176FF;
+    cursor: pointer;
+}
+
+.register__link:hover {
+    color: #175297;
+}
+
+.register__link:active {
+    color: #175297;
 }
 
 .test {
