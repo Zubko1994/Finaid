@@ -134,3 +134,25 @@
 .about-work__button:active {
     box-shadow: 0px 0px 10px 0px #1B5396 inset;
 }
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .scheme {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .scheme__stage {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .step-one::after, 
+    .step-two::after, 
+    .step-three::after {
+        content: none;
+    }
+}

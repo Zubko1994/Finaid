@@ -14,14 +14,19 @@
         <div class="container">
             <div class="header__wrapper">
                 <a href="#" class="logo"><img src="./image/logo.svg" alt="logo"></a>
-                <nav>
-                    <ul class="menu">
+                <nav class="header__nav">
+                    <ul class="menu menu-active">
                         <li class="menu__item">О компании</li>
                         <li class="menu__item">Как это работает?</li>
                         <li class="menu__item">Для сотрудничества</li>
                         <li class="menu__item">О Криптовалюте</li>
                         <li class="menu__item">FAQ</li>
                     </ul>
+                    <a class="autorization-active">Авторизация</a>
+                    <div class="header-contacts">
+                        <a href="#">+ 375(44) 121 12 12</a>
+                        <a href="#">estMailfd@gmail.com</a>
+                    </div>
                 </nav>
                 <a class="authorization" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +36,11 @@
                     </svg>
                     <span>Авторизация</span>
                 </a>
+                <div class="burger">
+                    <button class="burger__menu">
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -39,7 +49,7 @@
             <div class="register__wrapper">
                 <div class="register__partner">
                     <div class="register__description">
-                        <h1 class="register__title"><span>Инновационная</span></br></span> партнёрская сеть</h1>
+                        <h1 id="titlespan" class="register__title"><span>Инновационная</span></br></span> партнёрская сеть</h1>
                         <p class="register__subtitle"><span>Зарабатывайте</span> на криптовалюте, <span>рассказывая
                                 про неё
                                 другим!</span> Наши
@@ -62,7 +72,7 @@
                             <a class="register__recovery" href="#">Восстановить пароль</a>
                         </div>
                         <div>
-                            <button class="register__enter">Войти</button>
+                            <button id="button-js" class="register__enter">Войти</button>
                             <div class="register__noreg">
                                 <span>Нет аккаунта?</span>
                                 <a class="register__link" href="#">Зарегистрируйтесь</a>
@@ -287,6 +297,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>
