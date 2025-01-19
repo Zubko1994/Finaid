@@ -12,7 +12,7 @@
 
 .edge__list {
     display: flex;
-    gap: 64px;
+    gap: 20px;
 }
 
 .support__title {
@@ -28,6 +28,10 @@
 
 .support__title span {
     color: #0176FF;
+}
+
+.support__img {
+    width: 100%;
 }
 
 .support__advantages {
@@ -65,7 +69,7 @@
     text-wrap: balance;
     position: relative;
     left: 25px;
-    width: 296px;
+    max-width: 296px;
 }
 
 
@@ -76,3 +80,65 @@
     max-width: 237px;
 }
 
+@media (max-width:992px) {
+    .container {
+        max-width: 772px;
+    }
+
+    .edge__list {
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .support__img {
+        max-width: 321px;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .support__advantages {
+        align-items: flex-start;
+    }
+
+    .support__wrapper {
+        padding: 64px 12px 32px 12px;
+    }
+
+    .benefit-second {
+        right: 0px;
+        min-width: 296px;
+        text-align: left;
+    }
+
+    .support__benefit {
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .item__five {
+        left: 0px;
+        min-width: 100%;
+    }
+
+    .support__benefit::before {
+        content: url('');
+        display: inline-block;
+        margin-right: 8px;
+        width: 5px;
+        height: 5px;
+        background-color: #0176FF;
+        border-radius: 50%;
+        position: relative;
+        top: 8px;
+    }
+
+    .support {
+        background-image: url('../image/dropped.png');
+        background-repeat: no-repeat;
+        background-size: 321px 317px;
+        background-position: 55% 85%;
+    }
+
+}

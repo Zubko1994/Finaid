@@ -5,7 +5,6 @@
 .register__wrapper {
     padding-top: 115px;
     padding-bottom: 144px;
-
 }
 
 .register {
@@ -18,7 +17,7 @@
 
 .register__partner {
     display: flex;
-    gap: 100px;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -36,8 +35,6 @@
     color: #262931;
     margin-bottom: 56px;
     display: block;
-    max-width: 576px;
-    word-break: break-all;
 }
 
 .register__noreg {
@@ -45,7 +42,7 @@
 }
 
 .register__title:not(span) {
-    text-wrap: nowrap;
+    text-wrap: wrap;
 }
 
 
@@ -75,7 +72,7 @@
     padding: 16px 32px;
     background: #0176FF;
     border-radius: 72px;
-    max-width: 202px;
+    width: 202px;
     cursor: pointer;
 }
 
@@ -222,7 +219,7 @@
     box-shadow: 0px 0px 10px 0px #1B5396 inset;
 }
 
-.register__enter > span {
+.register__enter>span {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -253,11 +250,11 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
 
     .container {
-            max-width: 1100px;
-        }
+        max-width: 792px;
+    }
 
     .register__partner {
         flex-direction: column;
@@ -277,10 +274,37 @@
 
     .register__subtitle {
         max-width: 80%;
-        text-align: center;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .register__title {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28.8px;
+        text-align: left;
+        align-self: start;
+    }
+
+    .register__subtitle {
+        width: 100%;
+        align-self: start;
+    }
+
+    .register__wrapper {
+        padding-top: 56px;
+        padding-bottom: 64px;
     }
 
     .register__button {
-        max-width: 50%;
+        width: 296px;
+        font-size: 14px;
+        padding: 12px 87px;
     }
 }

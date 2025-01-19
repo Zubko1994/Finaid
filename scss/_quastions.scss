@@ -19,13 +19,6 @@
     color: #0176FF;
 }
 
-.quastion__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    min-width: 682px;
-}
-
 .quastion__describe {
     font-family: Inter;
     font-size: 16px;
@@ -38,6 +31,14 @@
     padding: 24px;
     background-color: #ffffff;
     border-radius: 16px;
+}
+
+.quastion__list {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 296px;
+    gap: 16px;
+    min-width: 682px;
 }
 
 .quastion__line {
@@ -62,7 +63,7 @@
     color: #262931;
 }
 
-details > summary {
+details>summary {
     list-style: none;
     position: relative;
 }
@@ -94,6 +95,9 @@ details[open] summary:before {
     box-shadow: 0px 12px 32px 0px #3249551A;
     max-height: 494px;
     margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 296px;
 }
 
 .quastion__form {
@@ -113,13 +117,13 @@ details[open] summary:before {
 
 .quastion__form-subtitle {
     font-family: Inter;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #61636D;
-        margin-bottom: 32px;
-        text-align: center;
-        text-wrap: pretty;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #61636D;
+    margin-bottom: 32px;
+    text-align: center;
+    text-wrap: pretty;
 }
 
 .quastion__record {
@@ -127,21 +131,21 @@ details[open] summary:before {
     flex-direction: column;
     gap: 24px;
 
-        & .name {
-            display: block;
-            border: 1px solid #C4C7CF;
-            padding: 16px 20px;
-            border-radius: 30px;
-            cursor: pointer;
+    & .name {
+        display: block;
+        border: 1px solid #C4C7CF;
+        padding: 16px 20px;
+        border-radius: 30px;
+        cursor: pointer;
 
-            &::placeholder {
-                font-family: Inter;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                color: #A9ABB6;
-            }
+        &::placeholder {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #A9ABB6;
         }
+    }
 }
 
 .quastion__record {
@@ -233,4 +237,39 @@ details[open] summary:before {
 .quastion__button:active {
     background: #1471DE;
     box-shadow: 0px 0px 10px 0px #1B5396 inset;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 992px;
+    }
+
+    .quastion__form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    summary:before,
+    details[open] summary:before {
+        position: absolute;
+        left: 97%;
+        padding-left: 5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .quastion__list {
+        min-width: 296px;
+    }
+
+    .quastion__describe {
+        padding-right: 20px;
+    }
+
+
 }
