@@ -1,5 +1,5 @@
 .about-cripta {
-    background-color: #F4F8FA;
+    background-color: #f4f8fa;
 }
 
 .about-cripta__wrapper {
@@ -11,7 +11,7 @@
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
-    color: #0176FF;
+    color: #0176ff;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -29,7 +29,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #61636D;
+    color: #61636d;
     display: block;
     text-align: center;
     max-width: 671px;
@@ -50,4 +50,44 @@
     display: block;
     margin: 0 auto;
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .about-cripta__title {
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .about-cripta__title span {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .about-cripta__wrapper {
+        padding: 0px 12px 64px 12px;
+    }
+
+    .about-cripta__subtitle {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 32px;
+        padding: 0px;
+    }
+
+    .about-cripta__subtitle span {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 32px;
+        padding: 0px;
+        max-width: 296px;
+        word-wrap: none;
+    }
 }

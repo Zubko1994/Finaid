@@ -1,6 +1,6 @@
 .support {
-    background-color: #F4F8FA;
-    background-image: url('../image/dropped.png');
+    background-color: #f4f8fa;
+    background-image: url("../image/dropped.png");
     background-repeat: no-repeat;
     background-size: 725px 717px;
     background-position: 50% 70%;
@@ -23,11 +23,10 @@
     color: #000000;
     text-align: center;
     margin-bottom: 56px;
-
 }
 
 .support__title span {
-    color: #0176FF;
+    color: #0176ff;
 }
 
 .support__img {
@@ -47,7 +46,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    color: #61636D;
+    color: #61636d;
     text-align: right;
 }
 
@@ -72,7 +71,6 @@
     max-width: 296px;
 }
 
-
 .benefit-second {
     position: relative;
     right: 25px;
@@ -80,7 +78,7 @@
     max-width: 237px;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .container {
         max-width: 772px;
     }
@@ -123,22 +121,62 @@
     }
 
     .support__benefit::before {
-        content: url('');
+        content: url("");
         display: inline-block;
         margin-right: 8px;
         width: 5px;
         height: 5px;
-        background-color: #0176FF;
+        background-color: #0176ff;
         border-radius: 50%;
         position: relative;
         top: 8px;
     }
 
     .support {
-        background-image: url('../image/dropped.png');
+        background-image: url("../image/dropped.png");
         background-repeat: no-repeat;
         background-size: 321px 317px;
         background-position: 55% 85%;
     }
+}
 
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .support__wrapper {
+        padding: 64px 5px 23px 4px;
+    }
+
+    .support__title {
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: left;
+        margin-bottom: 24px;
+        text-wrap: pretty;
+        word-wrap: none;
+    }
+
+    .support__benefit :not(:last-child) {
+        font-size: 14px;
+        line-height: 19.6px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .support__benefit:last-child {
+        margin-bottom: 8px;
+    }
+
+    .support__img {
+        max-width: 199px;
+    }
+
+    .support {
+        background-image: url("../image/dropped.png");
+        background-repeat: no-repeat;
+        background-size: 321px 317px;
+        background-position: 55% 100%;
+    }
 }

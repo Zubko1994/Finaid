@@ -1,6 +1,6 @@
 .start-earn {
-    background-color: #0176FF;
-    background-image: url('../image/line fone blue.svg');
+    background-color: #0176ff;
+    background-image: url("../image/line fone blue.svg");
     background-repeat: no-repeat;
     background-size: 877px 748px;
     background-position: 1530px -142px;
@@ -21,7 +21,7 @@
 }
 
 .start-earn__title span {
-    color: #FBDC7C;
+    color: #fbdc7c;
 }
 
 .start-earn__subtitle {
@@ -54,11 +54,11 @@
 }
 
 .start-earn__button:hover {
-    box-shadow: 0px 8px 16px 0px #3249554D;
+    box-shadow: 0px 8px 16px 0px #3249554d;
 }
 
 .start-earn__button:active {
-    box-shadow: 0px 0px 10px 0px #1B539699 inset;
+    box-shadow: 0px 0px 10px 0px #1b539699 inset;
 }
 
 .start-earn__wrapper a {
@@ -73,9 +73,48 @@
     color: #dce2e9;
 }
 
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
 
+    .start-earn__wrapper {
+        padding: 24px 12px 20px 12px;
+    }
 
+    .start-earn__title,
+    .start-earn__title span {
+        font-size: 14px;
+        line-height: 23.4px;
+        margin-bottom: 24px;
+        width: 270px;
+        text-wrap: balance;
+    }
 
+    .start-earn__subtitle {
+        font-size: 14px;
+        line-height: 22.4px;
+        margin-bottom: 24px;
+    }
 
+    .start-earn__subtitle span {
+        font-size: 14px;
+        line-height: 22.4px;
+        margin-bottom: 24px;
+    }
 
+    .start-earn__button {
+        font-size: 14px;
+        padding: 12px 24px;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
 
+    .start-earn__wrapper a {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        display: block;
+    }
+}

@@ -1,5 +1,5 @@
 .quastion {
-    background-color: #F4F8FA;
+    background-color: #f4f8fa;
 }
 
 .quastion__wrapper {
@@ -16,7 +16,7 @@
 }
 
 .quastion__title span {
-    color: #0176FF;
+    color: #0176ff;
 }
 
 .quastion__describe {
@@ -42,7 +42,7 @@
 }
 
 .quastion__line {
-    border: solid 1px #DCDDE5;
+    border: solid 1px #dcdde5;
     margin-bottom: 16px;
 }
 
@@ -63,19 +63,18 @@
     color: #262931;
 }
 
-details>summary {
+details > summary {
     list-style: none;
     position: relative;
 }
 
 summary:before {
-    content: url('../image/icon_close.svg');
+    content: url("../image/icon_close.svg");
     margin-right: 24px;
-
 }
 
 details[open] summary:before {
-    content: url('../image/detail_open.svg');
+    content: url("../image/detail_open.svg");
 }
 
 details[open] .quastion__describe {
@@ -92,7 +91,7 @@ details[open] summary:before {
     padding: 40px 48px 40px 48px;
     background-color: #ffffff;
     border-radius: 30px;
-    box-shadow: 0px 12px 32px 0px #3249551A;
+    box-shadow: 0px 12px 32px 0px #3249551a;
     max-height: 494px;
     margin-top: 35px;
     display: flex;
@@ -120,7 +119,7 @@ details[open] summary:before {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #61636D;
+    color: #61636d;
     margin-bottom: 32px;
     text-align: center;
     text-wrap: pretty;
@@ -133,7 +132,7 @@ details[open] summary:before {
 
     & .name {
         display: block;
-        border: 1px solid #C4C7CF;
+        border: 1px solid #c4c7cf;
         padding: 16px 20px;
         border-radius: 30px;
         cursor: pointer;
@@ -143,80 +142,79 @@ details[open] summary:before {
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
-            color: #A9ABB6;
+            color: #a9abb6;
         }
     }
 }
 
 .quastion__record {
     & .name:hover {
-        border: 1px solid #61636D;
+        border: 1px solid #61636d;
     }
 }
 
 .quastion__record {
     & .name:focus {
-        border: 1px solid #006DCA;
-        box-shadow: 0px 0px 0px 3px #008FF833;
+        border: 1px solid #006dca;
+        box-shadow: 0px 0px 0px 3px #008ff833;
     }
 }
 
 .quastion__record {
     & .name:invalid {
-        border: 1px solid #EE5656;
-        box-shadow: 0px 0px 0px 3px #FF7D8933;
+        border: 1px solid #ee5656;
+        box-shadow: 0px 0px 0px 3px #ff7d8933;
     }
 }
 
 .tel {
     display: block;
-    border: 1px solid #C4C7CF;
+    border: 1px solid #c4c7cf;
     padding: 16px 20px;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .tel:hover {
-    border: 1px solid #61636D;
+    border: 1px solid #61636d;
 }
 
 .tel:focus {
-    border: 1px solid #006DCA;
-    box-shadow: 0px 0px 0px 3px #008FF833;
+    border: 1px solid #006dca;
+    box-shadow: 0px 0px 0px 3px #008ff833;
 }
 
 .tel:invalid {
-    border: 1px solid #EE5656;
-    box-shadow: 0px 0px 0px 3px #FF7D8933;
+    border: 1px solid #ee5656;
+    box-shadow: 0px 0px 0px 3px #ff7d8933;
 }
 
 .message-text {
     display: block;
-    border: 1px solid #C4C7CF;
+    border: 1px solid #c4c7cf;
     border-radius: 30px;
     padding: 16px 8px 8px 20px;
     resize: none;
 }
 
 .message-text:hover {
-    border: 1px solid #61636D;
+    border: 1px solid #61636d;
 }
 
 .message-text:focus {
-    border: 1px solid #006DCA;
-    box-shadow: 0px 0px 0px 3px #008FF833;
+    border: 1px solid #006dca;
+    box-shadow: 0px 0px 0px 3px #008ff833;
 }
 
 .message-text:invalid {
-    border: 1px solid #EE5656;
-    box-shadow: 0px 0px 0px 3px #FF7D8933;
+    border: 1px solid #ee5656;
+    box-shadow: 0px 0px 0px 3px #ff7d8933;
 }
-
 
 .quastion__button {
     display: block;
     margin: 0 auto;
-    border: 1px solid #0176FF;
+    border: 1px solid #0176ff;
     border-radius: 72px;
     color: #262931;
     font-family: Inter;
@@ -229,14 +227,14 @@ details[open] summary:before {
 }
 
 .quastion__button:hover {
-    background: #0176FF;
+    background: #0176ff;
     color: #ffffff;
-    border: 1px solid #0176FF;
+    border: 1px solid #0176ff;
 }
 
 .quastion__button:active {
-    background: #1471DE;
-    box-shadow: 0px 0px 10px 0px #1B5396 inset;
+    background: #1471de;
+    box-shadow: 0px 0px 10px 0px #1b5396 inset;
 }
 
 @media (max-width: 1050px) {
@@ -255,7 +253,6 @@ details[open] summary:before {
         left: 97%;
         padding-left: 5px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -270,6 +267,45 @@ details[open] summary:before {
     .quastion__describe {
         padding-right: 20px;
     }
+}
 
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
 
+    .quastion__wrapper {
+        padding: 10px 0px 120px 0px;
+    }
+
+    .quastion__title {
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-bottom: 32px;
+    }
+
+    .quastion__describe {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    .quastion__subtitle {
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .answer-list {
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+
+    .quastion__item {
+        padding: 12px;
+    }
+
+    .quastion__list {
+        gap: 8px;
+    }
+
+    
 }

@@ -1,5 +1,5 @@
 .study {
-    background-color: #F4F8FA;
+    background-color: #f4f8fa;
 }
 
 .study__wrapper {
@@ -23,10 +23,35 @@
 }
 
 .study__title span {
-    color: #0176FF;
+    color: #0176ff;
 }
 
 .study__video {
     margin: 0 auto;
     display: block;
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .study__wrapper {
+        padding: 15px 12px 64px 12px;
+    }
+
+    .study__title {
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
+        .study__title span {
+            font-size: 18px;
+            line-height: 21.6px;
+            text-align: left;
+        }
+
+
 }

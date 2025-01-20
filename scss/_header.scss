@@ -9,8 +9,8 @@
 }
 
 .logo {
-    max-width: 104px;
-    max-height: 36px;
+    width: 104px;
+    height: 36px;
 }
 
 .menu {
@@ -209,5 +209,16 @@
         font-weight: 400;
         line-height: 16.94px;
         color: #61636D;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .logo {
+        width: 96px;
+        height: 33px;
     }
 }

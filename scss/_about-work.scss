@@ -1,5 +1,5 @@
 .about-work {
-    background-color: #F4F8FA;
+    background-color: #f4f8fa;
 }
 
 .about-work__wrapper {
@@ -20,7 +20,7 @@
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
-    color: #0176FF;
+    color: #0176ff;
 }
 
 .scheme {
@@ -52,7 +52,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    color: #61636D;
+    color: #61636d;
 }
 
 .scheme__stage {
@@ -124,7 +124,7 @@
 
 .about-work__button {
     border-radius: 72px;
-    background-color: #0176FF;
+    background-color: #0176ff;
     color: #ffffff;
     padding: 16px 32px;
     font-family: Inter;
@@ -137,12 +137,12 @@
 }
 
 .about-work__button:hover {
-    background-color: #1471DE;
-    box-shadow: 0px 4px 20px 0px #106DD980;
+    background-color: #1471de;
+    box-shadow: 0px 4px 20px 0px #106dd980;
 }
 
 .about-work__button:active {
-    box-shadow: 0px 0px 10px 0px #1B5396 inset;
+    box-shadow: 0px 0px 10px 0px #1b5396 inset;
 }
 
 @media (max-width: 1100px) {
@@ -188,5 +188,45 @@
 
     .scheme__stage img {
         max-width: 104px;
+    }
+
+    .about-work__wrapper {
+        padding: 64px 12px 47px 12px;
+    }
+
+    .about-work__title {
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-bottom: 0px;
+    }
+
+    .about-work__title span {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .scheme__stage {
+        flex: 0 1 296px;
+    }
+
+    .scheme .scheme__title {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .scheme__subtitle {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+
+    .scheme {
+        margin-bottom: 0px;
+    }
+
+    .about-work__button {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 12px 25px;
+        width: 100%;
     }
 }
