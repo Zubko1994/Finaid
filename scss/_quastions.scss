@@ -307,5 +307,53 @@ details[open] summary:before {
         gap: 8px;
     }
 
-    
+    .quastion__info {
+        padding: 18px 12px;
+        margin-top: 32px;
+        flex: 1 1 296px;
+    }
+
+    .quastion__form-title {
+        font-size: 16px;
+        line-height: 19.2px;
+        margin-bottom: 12px;
+    }
+
+    .quastion__form-subtitle {
+        font-size: 14px;
+        line-height: 18.2px;
+        margin-bottom: 18px;
+    }
+
+    .quastion__record {
+        gap: 12px;
+
+        & .name {
+            padding: 12px 20px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .tel {
+        padding: 12px 20px;
+    }
+
+    .tel::placeholder {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .message-text::placeholder {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .quastion__button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
 }
