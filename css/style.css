@@ -1,4 +1,5 @@
 .header__wrapper {
+  padding: 12px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,8 +56,8 @@
 }
 
 .burger__menu {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   position: relative;
   cursor: pointer;
   background: none;
@@ -80,7 +81,7 @@
   position: absolute;
   content: "";
   display: block;
-  width: 32px;
+  width: 22px;
   height: 3px;
   background: black;
   transition: all 0.3s linear;
@@ -321,7 +322,7 @@
 #login {
   border-radius: 30px;
   border: 1px solid #c4c7cf;
-  padding: 16px 8px;
+  padding: 16px 20px;
   width: 100%;
   margin-bottom: 24px;
   cursor: pointer;
@@ -344,7 +345,7 @@
 #password {
   border-radius: 30px;
   border: 1px solid #c4c7cf;
-  padding: 16px 8px;
+  padding: 16px 20px;
   width: 100%;
   margin-bottom: 8px;
   cursor: pointer;
@@ -469,6 +470,9 @@
   .container {
     max-width: 792px;
   }
+  .register {
+    background-image: none;
+  }
   .register__partner {
     flex-direction: column;
     gap: 40px;
@@ -483,8 +487,8 @@
     width: 70%;
   }
   .register__subtitle {
-    width: 100%;
-    text-align: left;
+    width: 70%;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -638,7 +642,7 @@
     max-height: 224px;
   }
   .about-project__wrapper {
-    padding: 40px 0px 40px 12px;
+    padding: 40px 0px 40px 0px;
     align-items: flex-start;
   }
   .about-project__title {
@@ -732,21 +736,21 @@
 }
 
 .stage-one {
-  flex: 0 1 280px;
+  flex: 1 1 280px;
   padding-top: 160px;
 }
 
 .stage-three {
-  flex: 0 1 280px;
+  flex: 1 1 280px;
   padding-top: 120px;
 }
 
 .stage-two {
-  flex: 0 1 280px;
+  flex: 1 1 280px;
 }
 
 .stage-last {
-  flex: 0 1 280px;
+  flex: 1 1 280px;
 }
 
 .step-one {
@@ -814,6 +818,11 @@
   .container {
     max-width: 992px;
   }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
   .scheme {
     align-content: center;
     justify-content: space-around;
@@ -824,9 +833,12 @@
   .scheme__stage {
     flex-direction: row;
     gap: 16px;
-    flex: 0 1 280px;
-    justify-content: space-around;
+    flex: 1 1 296px;
+    justify-content: space-between;
     align-items: center;
+  }
+  .scheme__stage img {
+    max-width: 104px;
   }
   .step-one::after,
   .step-two::after,
@@ -839,6 +851,14 @@
   .stage-three {
     padding-top: 0px;
   }
+  .scheme .scheme__title {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .scheme__subtitle {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -848,7 +868,7 @@
     max-width: 104px;
   }
   .about-work__wrapper {
-    padding: 64px 12px 47px 12px;
+    padding: 64px 0px 47px 0px;
   }
   .about-work__title {
     font-size: 18px;
@@ -860,15 +880,7 @@
     line-height: 21.6px;
   }
   .scheme__stage {
-    flex: 0 1 296px;
-  }
-  .scheme .scheme__title {
-    font-size: 14px;
-    line-height: 16.8px;
-  }
-  .scheme__subtitle {
-    font-size: 14px;
-    line-height: 18.2px;
+    flex: 1 1 296px;
   }
   .scheme {
     margin-bottom: 0px;
@@ -949,7 +961,7 @@
     line-height: 21.6px;
   }
   .about-cripta__wrapper {
-    padding: 0px 12px 64px 12px;
+    padding: 0px 0px 64px 0px;
   }
   .about-cripta__subtitle {
     font-size: 14px;
@@ -1048,7 +1060,7 @@
     max-width: 320px;
   }
   .start-earn__wrapper {
-    padding: 24px 12px 20px 12px;
+    padding: 24px 0px 20px 0px;
   }
   .start-earn__title,
   .start-earn__title span {
@@ -1180,7 +1192,7 @@
     align-items: flex-start;
   }
   .support__wrapper {
-    padding: 64px 12px 32px 12px;
+    padding: 64px 0px 32px 0px;
   }
   .benefit-second {
     right: 0px;
@@ -1219,7 +1231,7 @@
     max-width: 320px;
   }
   .support__wrapper {
-    padding: 64px 5px 23px 4px;
+    padding: 64px 0px 23px 0px;
   }
   .support__title {
     font-size: 18px;
@@ -1235,10 +1247,8 @@
     text-align: left;
     margin-bottom: 16px;
   }
-  .support__benefit:last-child {
-    margin-bottom: 8px;
-  }
   .support__img {
+    margin-top: 8px;
     max-width: 199px;
   }
   .support {
@@ -1286,7 +1296,7 @@
     max-width: 320px;
   }
   .study__wrapper {
-    padding: 15px 12px 64px 12px;
+    padding: 15px 0px 64px 0px;
   }
   .study__title {
     font-size: 18px;
@@ -1816,5 +1826,5 @@ body {
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 12px;
 }/*# sourceMappingURL=style.css.map */

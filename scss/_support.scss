@@ -100,7 +100,7 @@
     }
 
     .support__wrapper {
-        padding: 64px 12px 32px 12px;
+        padding: 64px 0px 32px 0px;
     }
 
     .benefit-second {
@@ -146,7 +146,7 @@
     }
 
     .support__wrapper {
-        padding: 64px 5px 23px 4px;
+        padding: 64px 0px 23px 0px;
     }
 
     .support__title {
@@ -165,11 +165,9 @@
         margin-bottom: 16px;
     }
 
-    .support__benefit:last-child {
-        margin-bottom: 8px;
-    }
 
     .support__img {
+        margin-top: 8px;
         max-width: 199px;
     }
 

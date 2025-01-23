@@ -1,326 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/null.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>FinAid</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/null.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>FinAid</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a href="#" class="logo"><img src="./image/logo.svg" alt="logo"></a>
-                <nav class="header__nav">
-                    <ul class="menu menu-active">
-                        <li class="menu__item">О компании</li>
-                        <li class="menu__item">Как это работает?</li>
-                        <li class="menu__item">Для сотрудничества</li>
-                        <li class="menu__item">О Криптовалюте</li>
-                        <li class="menu__item">FAQ</li>
-                    </ul>
-                    <a class="autorization-active">Авторизация</a>
-                    <div class="header-contacts">
-                        <a href="#">+ 375(44) 121 12 12</a>
-                        <a href="#">estMailfd@gmail.com</a>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="logo"
+                        ><img src="./image/logo.svg" alt="logo"
+                    /></a>
+                    <nav class="header__nav">
+                        <ul class="menu menu-active">
+                            <li class="menu__item">О компании</li>
+                            <li class="menu__item">Как это работает?</li>
+                            <li class="menu__item">Для сотрудничества</li>
+                            <li class="menu__item">О Криптовалюте</li>
+                            <li class="menu__item">FAQ</li>
+                        </ul>
+                        <a class="autorization-active">Авторизация</a>
+                        <div class="header-contacts">
+                            <a href="#">+ 375(44) 121 12 12</a>
+                            <a href="#">estMailfd@gmail.com</a>
+                        </div>
+                    </nav>
+                    <a class="authorization" href="#">
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.602 17.8571H10.7143C10.3198 17.8571 10 17.5373 10 17.1428C10 16.7483 10.3198 16.4285 10.7143 16.4285H12.5714C13.3833 16.4285 13.9492 16.428 14.3898 16.392C14.8221 16.3567 15.0704 16.2908 15.2585 16.195C15.6618 15.9895 15.9896 15.6617 16.195 15.2585C16.2909 15.0704 16.3567 14.8221 16.392 14.3898C16.428 13.9492 16.4286 13.3833 16.4286 12.5714V7.42854C16.4286 6.61668 16.428 6.05074 16.392 5.61014C16.3567 5.17787 16.2909 4.92953 16.195 4.74141C15.9896 4.33821 15.6618 4.01039 15.2585 3.80495C15.0704 3.7091 14.8221 3.64327 14.3898 3.60795C13.9492 3.57195 13.3833 3.57139 12.5714 3.57139H10.7143C10.3198 3.57139 10 3.2516 10 2.85711C10 2.46262 10.3198 2.14282 10.7143 2.14282H12.602H12.6021C13.3762 2.14282 14.0005 2.14281 14.5062 2.18412C15.0268 2.22666 15.484 2.31652 15.9071 2.53209C16.5791 2.87449 17.1255 3.42085 17.4679 4.09286C17.6834 4.51592 17.7733 4.9732 17.8158 5.49381C17.8572 5.99943 17.8571 6.62383 17.8571 7.39796V12.602C17.8571 13.3761 17.8572 14.0005 17.8158 14.5061C17.7733 15.0267 17.6834 15.484 17.4679 15.9071C17.1255 16.5791 16.5791 17.1254 15.9071 17.4678C15.484 17.6834 15.0268 17.7733 14.5062 17.8158C14.0005 17.8571 13.3761 17.8571 12.602 17.8571ZM2.14285 9.99997C2.14285 9.60548 2.46265 9.28568 2.85714 9.28568H9.70413L8.06635 7.6479C7.7874 7.36895 7.7874 6.91669 8.06635 6.63775C8.34529 6.3588 8.79755 6.3588 9.0765 6.63775L11.9331 9.49438C11.9349 9.4961 11.9366 9.49783 11.9383 9.49957C12.0045 9.56696 12.0546 9.64422 12.0887 9.72655C12.1233 9.81015 12.1426 9.90175 12.1428 9.99782C12.1429 9.99854 12.1429 9.99925 12.1429 9.99997C12.1429 10.0007 12.1429 10.0014 12.1428 10.0021C12.1423 10.1961 12.0644 10.372 11.9383 10.5004C11.9366 10.5021 11.9349 10.5038 11.9331 10.5056L9.0765 13.3622C8.79755 13.6411 8.34529 13.6411 8.06635 13.3622C7.7874 13.0832 7.7874 12.631 8.06635 12.352L9.70413 10.7143H2.85714C2.46265 10.7143 2.14285 10.3945 2.14285 9.99997Z"
+                                fill="#262931"
+                            />
+                        </svg>
+                        <span>Авторизация</span>
+                    </a>
+                    <div class="burger">
+                        <button class="burger__menu">
+                            <span></span>
+                        </button>
                     </div>
-                </nav>
-                <a class="authorization" href="#">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.602 17.8571H10.7143C10.3198 17.8571 10 17.5373 10 17.1428C10 16.7483 10.3198 16.4285 10.7143 16.4285H12.5714C13.3833 16.4285 13.9492 16.428 14.3898 16.392C14.8221 16.3567 15.0704 16.2908 15.2585 16.195C15.6618 15.9895 15.9896 15.6617 16.195 15.2585C16.2909 15.0704 16.3567 14.8221 16.392 14.3898C16.428 13.9492 16.4286 13.3833 16.4286 12.5714V7.42854C16.4286 6.61668 16.428 6.05074 16.392 5.61014C16.3567 5.17787 16.2909 4.92953 16.195 4.74141C15.9896 4.33821 15.6618 4.01039 15.2585 3.80495C15.0704 3.7091 14.8221 3.64327 14.3898 3.60795C13.9492 3.57195 13.3833 3.57139 12.5714 3.57139H10.7143C10.3198 3.57139 10 3.2516 10 2.85711C10 2.46262 10.3198 2.14282 10.7143 2.14282H12.602H12.6021C13.3762 2.14282 14.0005 2.14281 14.5062 2.18412C15.0268 2.22666 15.484 2.31652 15.9071 2.53209C16.5791 2.87449 17.1255 3.42085 17.4679 4.09286C17.6834 4.51592 17.7733 4.9732 17.8158 5.49381C17.8572 5.99943 17.8571 6.62383 17.8571 7.39796V12.602C17.8571 13.3761 17.8572 14.0005 17.8158 14.5061C17.7733 15.0267 17.6834 15.484 17.4679 15.9071C17.1255 16.5791 16.5791 17.1254 15.9071 17.4678C15.484 17.6834 15.0268 17.7733 14.5062 17.8158C14.0005 17.8571 13.3761 17.8571 12.602 17.8571ZM2.14285 9.99997C2.14285 9.60548 2.46265 9.28568 2.85714 9.28568H9.70413L8.06635 7.6479C7.7874 7.36895 7.7874 6.91669 8.06635 6.63775C8.34529 6.3588 8.79755 6.3588 9.0765 6.63775L11.9331 9.49438C11.9349 9.4961 11.9366 9.49783 11.9383 9.49957C12.0045 9.56696 12.0546 9.64422 12.0887 9.72655C12.1233 9.81015 12.1426 9.90175 12.1428 9.99782C12.1429 9.99854 12.1429 9.99925 12.1429 9.99997C12.1429 10.0007 12.1429 10.0014 12.1428 10.0021C12.1423 10.1961 12.0644 10.372 11.9383 10.5004C11.9366 10.5021 11.9349 10.5038 11.9331 10.5056L9.0765 13.3622C8.79755 13.6411 8.34529 13.6411 8.06635 13.3622C7.7874 13.0832 7.7874 12.631 8.06635 12.352L9.70413 10.7143H2.85714C2.46265 10.7143 2.14285 10.3945 2.14285 9.99997Z"
-                            fill="#262931" />
-                    </svg>
-                    <span>Авторизация</span>
-                </a>
-                <div class="burger">
-                    <button class="burger__menu">
-                        <span></span>
-                    </button>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="register">
-        <div class="container">
-            <div class="register__wrapper">
-                <div class="register__partner">
-                    <div class="register__description">
-                        <h1 id="titlespan" class="register__title"><span>Инновационная</span></br></span> партнёрская
-                            сеть</h1>
-                        <p class="register__subtitle"><span>Зарабатывайте</span> на криптовалюте, <span>рассказывая
-                                про неё
-                                другим!</span> Наши
-                            партнёры зарабатывают больше на
-                            30% за счёт
-                            многоуровневого партнёрства и уникальных механик.</p>
-                        <button class="register__button">Стать партнёром</button>
-                    </div>
-                    <form class="register__info" action="#">
-                        <h3 class="register__field-h3">Войти в систему</h3>
-                        <div>
-                            <label for="login"></label>
-                            <input id="login" type="text" placeholder="Логин">
-                            <div class="register__password">
-                                <label for="password">
-                                    <input id="password" type="password" placeholder="Пароль">
-                                    <img class="airs" src="./image/airs.svg" alt="иконка глаза">
-                                </label>
+        </header>
+        <section class="register">
+            <div class="container">
+                <div class="register__wrapper">
+                    <div class="register__partner">
+                        <div class="register__description">
+                            <h1 id="titlespan" class="register__title">
+                                <span>Инновационная</span><br>
+                                партнёрская сеть
+                            </h1>
+                            <p class="register__subtitle">
+                                <span>Зарабатывайте</span> на криптовалюте,
+                                <span>рассказывая про неё другим!</span> Наши
+                                партнёры зарабатывают больше на 30% за счёт
+                                многоуровневого партнёрства и уникальных
+                                механик.
+                            </p>
+                            <button class="register__button">
+                                Стать партнёром
+                            </button>
+                        </div>
+                        <form class="register__info" action="#">
+                            <h3 class="register__field-h3">Войти в систему</h3>
+                            <div>
+                                <label for="login"></label>
+                                <input
+                                    id="login"
+                                    type="text"
+                                    placeholder="Логин"
+                                />
+                                <div class="register__password">
+                                    <label for="password">
+                                        <input
+                                            id="password"
+                                            type="password"
+                                            placeholder="Пароль"
+                                        />
+                                        <img
+                                            class="airs"
+                                            src="./image/airs.svg"
+                                            alt="иконка глаза"
+                                        />
+                                    </label>
+                                </div>
+                                <a class="register__recovery" href="#"
+                                    >Восстановить пароль</a
+                                >
                             </div>
-                            <a class="register__recovery" href="#">Восстановить пароль</a>
-                        </div>
-                        <div>
-                            <button id="button-js" class="register__enter">Войти</button>
-                            <div class="register__noreg">
-                                <span>Нет аккаунта?</span>
-                                <a class="register__link" href="#">Зарегистрируйтесь</a>
+                            <div>
+                                <button id="button-js" class="register__enter">
+                                    Войти
+                                </button>
+                                <div class="register__noreg">
+                                    <span>Нет аккаунта?</span>
+                                    <a class="register__link" href="#"
+                                        >Зарегистрируйтесь</a
+                                    >
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="about-project">
-        <div class="container">
-            <div class="about-project__wrapper">
-                <img src="./image/computer.png" alt="изображение компьютера">
-                <div class="about-project__info">
-                    <h2 class="about-project__title">О проекте</h2>
-                    <p class="about-project__subtitle"><span>Проект Finaid позволяет зарабатывать</span> на людях,
-                        которые торгуют
-                        криптовалютой. Сервис предоставляет возможность
-                        монетизировать знания и связи, работая с <span>клиентами и партнерами.</span></p>
-                    <p class="about-project__subtitle">В рамках проекта разработан <span>удобный и функциональный
-                            интерфейс</span>,
-                        который позволяет легко подключать клиентов, вести <span>учет
-                            доходов и отслеживать статистику.</span></p>
-                    <p class="about-project__subtitle">Все данные о доходах клиентов и партнеров надёжно защищены,
-                        хранятся в системе и могут быть выгружены для перечисления
-                        доходов. Проект будет полезен как для тех, кто уже знаком с криптовалютой, так и для новичков.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about-work">
-        <div class="container">
-            <div class="about-work__wrapper">
-                <h2 class="about-work__title">Как это <span>работает?</span></h2>
-                <div class="scheme">
-                    <div class="scheme__stage step-one">
-                        <img src="./image/comp1.png" alt="компьютер">
-                        <div class="scheme__description stage-one">
-                            <h3 class="scheme__title">Регистрация</h3>
-                            <p class="scheme__subtitle">Заполните все необходимые данные и создайте аккаунт</p>
-                        </div>
-                    </div>
-                    <div class="scheme__stage step-two">
-                        <div class="scheme__description stage-two">
-                            <h3 class="scheme__title">Подключение клиентов</h3>
-                            <p class="scheme__subtitle">Открывайте мир криптовалюты клиентам и регистрируйте их в
-                                системе</p>
-                        </div>
-                        <img src="./image/comp2.png" alt="компьютер">
-                    </div>
-                    <div class="scheme__stage step-three">
-                        <img src="./image/Clip path  comp.png" alt="компьютер">
-                        <p class="scheme__subtitle stage-three">Рассказывайте о сервисе партнёрам и зарабатывайте вместе
+        </section>
+        <section id="about-company" class="about-project">
+            <div class="container">
+                <div class="about-project__wrapper">
+                    <img
+                        src="./image/computer.png"
+                        alt="изображение компьютера"
+                    />
+                    <div class="about-project__info">
+                        <h2 class="about-project__title">О проекте</h2>
+                        <p class="about-project__subtitle">
+                            <span>Проект Finaid позволяет зарабатывать</span> на
+                            людях, которые торгуют криптовалютой. Сервис
+                            предоставляет возможность монетизировать знания и
+                            связи, работая с
+                            <span>клиентами и партнерами.</span>
+                        </p>
+                        <p class="about-project__subtitle">
+                            В рамках проекта разработан
+                            <span>удобный и функциональный интерфейс</span>,
+                            который позволяет легко подключать клиентов, вести
+                            <span>учет доходов и отслеживать статистику.</span>
+                        </p>
+                        <p class="about-project__subtitle">
+                            Все данные о доходах клиентов и партнеров надёжно
+                            защищены, хранятся в системе и могут быть выгружены
+                            для перечисления доходов. Проект будет полезен как
+                            для тех, кто уже знаком с криптовалютой, так и для
+                            новичков.
                         </p>
                     </div>
-                    <div class="scheme__stage">
-                        <div class="scheme__description stage-last">
-                            <h3 class="scheme__title">Выплаты</h3>
-                            <p class="scheme__subtitle">Отслеживайте статистику. Увеличивайте заработок и выводите
-                                средства</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-job" class="about-work">
+            <div class="container">
+                <div class="about-work__wrapper">
+                    <h2 class="about-work__title">
+                        Как это <span>работает?</span>
+                    </h2>
+                    <div class="scheme">
+                        <div class="scheme__stage step-one">
+                            <img src="./image/comp1.png" alt="компьютер" />
+                            <div class="scheme__description stage-one">
+                                <h3 class="scheme__title">Регистрация</h3>
+                                <p class="scheme__subtitle">
+                                    Заполните все необходимые данные и создайте
+                                    аккаунт
+                                </p>
+                            </div>
                         </div>
-                        <img src="./image/complast.png" alt="компьютер">
-                    </div>
-                </div>
-                <button class="about-work__button">Стать партнёром</button>
-            </div>
-        </div>
-    </section>
-    <section class="about-cripta">
-        <div class="container">
-            <div class="about-cripta__wrapper">
-                <h2 class="about-cripta__title">О криптовалюте <span>просто</span></h2>
-                <p class="about-cripta__subtitle">Посмотрите видео и ещё раз закрепите свои знания. Уверены, что вы
-                    подчеркнёте </br> из этого видео что-то <span>полезное и новое</span> для
-                    себя.</p>
-                <video class="about-cripta__video" poster="./image/aboutcripto.png"
-                    src="./image/aboutcripto.png"></video>
-            </div>
-        </div>
-    </section>
-    <section class="start-earn">
-        <div class="container">
-            <div class="start-earn__wrapper">
-                <h2 class="start-earn__title">Проходите простую регистрацию и <span>начинайте зарабатывать</span></h2>
-                <p class="start-earn__subtitle"><span>Никаких дополнительных проверок.</span> После регистрации вам
-                    будет доступен весь необходимый функционал по привлечению
-                    партнёров и регистрации клиентов.</p>
-                <button class="start-earn__button">Зарегистрироваться</button>
-                <a class="start-earn__enter" href="#">Войти в аккаунт</a>
-            </div>
-        </div>
-    </section>
-    <section class="support">
-        <div class="container">
-            <div class="support__wrapper">
-                <h2 class="support__title"><span>Поддержка партнёров</span> нового </br> поколения</h2>
-                <div class="edge__list">
-                    <div class="support__advantages">
-                        <p class="support__benefit"><span>Всегда на связи</span> и помогаем решить любой вопрос</p>
-                        <p class="support__benefit benefit-second">Замотивированы <span>на ваш успех</span> и профит</p>
-                        <p class="support__benefit">Привлекаем <span>технических специалистов</span> для нестандартных
-                            ситуаций</p>
-                    </div>
-                    <img class="support__img" src="./image/people.png" alt="изображение людей">
-                    <div class="support__advantages">
-                        <p class="support__benefit privilege-item item__four">Доступ к <span>полной статистике</span> по
-                            всем клиентам и партнерам</p>
-                        <p class="support__benefit privilege-item item__five"><span>Индивидуальный подход</span> к
-                            каждому партнеру, учёт особенностей работы</p>
-                        <p class="support__benefit privilege-item item__six"><span>Обучаем, делимся инсайтами</span> и
-                            помогаем достигать высоких результатов</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="study">
-        <div class="container">
-            <div class="study__wrapper">
-                <h2 class="study__title"><span>Обучение</span> у наших партнеров</h2>
-                <video poster="./image/fonds.png" src="./image/fonds.png"></video>
-            </div>
-        </div>
-    </section>
-    <section class="quastion">
-        <div class="container">
-            <div class="quastion__wrapper">
-                <h2 class="quastion__title"><span>Ответы</span> на вопросы</h2>
-                <div class="quastion__form">
-                    <div class="quastion__list">
-                        <details class="quastion__item" open>
-                            <summary class="quastion__describe">Как я могу зарегистрировать своих клиентов в системе?
-                            </summary>
-                            <hr class="quastion__line">
-                            <p class="quastion__subtitle">Для регистрации клиентов в системе необходимо выполнить
-                                следующие шаги:</p>
-                            <ol class="answer-list">
-                                <li class="answer-list__item">Авторизоваться в личном кабинете.</li>
-                                <li class="answer-list__item">Перейти в раздел "Мои клиенты".</li>
-                                <li class="answer-list__item">Нажать на кнопку "Добавить клиента".</li>
-                                <li class="answer-list__item">Заполнить необходимую информацию о клиенте, такую как ФИО,
-                                    контактные данные,
-                                    информацию о доходах и т.д</li>
-                                <li class="answer-list__item">Нажать на кнопку "Сохранить".</li>
-                                <li class="answer-list__item">Карточка нового клиента будет отображаться в списке "Мои
-                                    клиенты".</li>
-                            </ol>
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Могут ли мои клиенты стать партнерами?</summary>
-                            <hr class="quastion__line">
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Сколько времени занимает перечисление доходов моим
-                                партнерам?</summary>
-                            <hr class="quastion__line">
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Как я могу получить дополнительную поддержку или помощь
-                                в работе с системой?</summary>
-                            <hr class="quastion__line">
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Как долго регистрируется клиент в системе?</summary>
-                            <hr class="quastion__line">
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Есть ли требования к клиентам для использования сервиса?
-                            </summary>
-                            <hr class="quastion__line">
-                        </details>
-                        <details class="quastion__item">
-                            <summary class="quastion__describe">Как прекратить сотрудничество с Finaid?</summary>
-                            <hr class="quastion__line">
-                        </details>
-                    </div>
-                    <form class="quastion__info" action="#">
-                        <h3 class="quastion__form-title">Остались вопросы?</h3>
-                        <p class="quastion__form-subtitle">Введите своё имя и телефон. Мы свяжемся с вами в течение 2
-                            часов</p>
-                        <div class="quastion__record">
-                            <input class="name" type="text" placeholder="Ваше имя">
-                            <input class="tel" type="tel" placeholder="+375 (_ _)  _ _ _ - _ _ - _ _"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            <textarea class="message-text" name="message" id="message"
-                                placeholder="Текст сообщения.."></textarea>
-                            <button class="quastion__button">Отправить</button>
+                        <div class="scheme__stage step-two">
+                            <div class="scheme__description stage-two">
+                                <h3 class="scheme__title">
+                                    Подключение клиентов
+                                </h3>
+                                <p class="scheme__subtitle">
+                                    Открывайте мир криптовалюты клиентам и
+                                    регистрируйте их в системе
+                                </p>
+                            </div>
+                            <img src="./image/comp2.png" alt="компьютер" />
                         </div>
-                    </form>
+                        <div class="scheme__stage step-three">
+                            <img
+                                src="./image/Clip path  comp.png"
+                                alt="компьютер"
+                            />
+                            <p class="scheme__subtitle stage-three">
+                                Рассказывайте о сервисе партнёрам и
+                                зарабатывайте вместе
+                            </p>
+                        </div>
+                        <div class="scheme__stage">
+                            <div class="scheme__description stage-last">
+                                <h3 class="scheme__title">Выплаты</h3>
+                                <p class="scheme__subtitle">
+                                    Отслеживайте статистику. Увеличивайте
+                                    заработок и выводите средства
+                                </p>
+                            </div>
+                            <img src="./image/complast.png" alt="компьютер" />
+                        </div>
+                    </div>
+                    <button class="about-work__button">Стать партнёром</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__menu">
-                    <div class="footer__copyright">
-                        <a href="#" class="logo logo__footer"><img src="./image/logo.svg" alt="logo"></a>
-                        <span class="logo__info">Copyright © 2023 finaid</span>
-                    </div>
-                    <nav>
-                        <ul class="footer__navigation">
-                            <li class="footer__menu-item">О компании</li>
-                            <li class="footer__menu-item">Как это работает?</li>
-                            <li class="footer__menu-item">Для сотрудничества</li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="footer__navigation">
-                            <li class="footer__menu-item">О Криптовалюте</li>
-                            <li class="footer__menu-item">Поддержка</li>
-                            <li class="footer__menu-item">FAQ</li>
-                        </ul>
-                    </nav>
-                    <div class="footer__info">
-                        <a class="authorization authorization-footer" href="#">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.602 15.8571H8.71428C8.31979 15.8571 8 15.5373 8 15.1428C8 14.7483 8.31979 14.4285 8.71428 14.4285H10.5714C11.3833 14.4285 11.9492 14.428 12.3898 14.392C12.8221 14.3567 13.0704 14.2908 13.2585 14.195C13.6618 13.9895 13.9896 13.6617 14.195 13.2585C14.2909 13.0704 14.3567 12.8221 14.392 12.3898C14.428 11.9492 14.4286 11.3833 14.4286 10.5714V5.42854C14.4286 4.61668 14.428 4.05074 14.392 3.61014C14.3567 3.17787 14.2909 2.92953 14.195 2.74141C13.9896 2.33821 13.6618 2.01039 13.2585 1.80495C13.0704 1.7091 12.8221 1.64327 12.3898 1.60795C11.9492 1.57195 11.3833 1.57139 10.5714 1.57139H8.71428C8.31979 1.57139 8 1.2516 8 0.857108C8 0.462619 8.31979 0.142822 8.71428 0.142822H10.602H10.6021C11.3762 0.142816 12.0005 0.14281 12.5062 0.184121C13.0268 0.226656 13.484 0.316522 13.9071 0.532085C14.5791 0.87449 15.1255 1.42085 15.4679 2.09286C15.6834 2.51592 15.7733 2.9732 15.8158 3.49381C15.8572 3.99943 15.8571 4.62383 15.8571 5.39796V10.602C15.8571 11.3761 15.8572 12.0005 15.8158 12.5061C15.7733 13.0267 15.6834 13.484 15.4679 13.9071C15.1255 14.5791 14.5791 15.1254 13.9071 15.4678C13.484 15.6834 13.0268 15.7733 12.5062 15.8158C12.0005 15.8571 11.3761 15.8571 10.602 15.8571ZM0.142853 7.99997C0.142853 7.60548 0.462649 7.28568 0.857139 7.28568H7.70413L6.06635 5.6479C5.7874 5.36895 5.7874 4.91669 6.06635 4.63775C6.34529 4.3588 6.79755 4.3588 7.0765 4.63775L9.93313 7.49438C9.93486 7.4961 9.93658 7.49783 9.93829 7.49957C10.0045 7.56696 10.0546 7.64422 10.0887 7.72655C10.1233 7.81015 10.1426 7.90175 10.1428 7.99782C10.1429 7.99854 10.1429 7.99925 10.1429 7.99997C10.1429 8.00068 10.1429 8.00139 10.1428 8.00211C10.1423 8.19613 10.0644 8.37196 9.93829 8.50036C9.93658 8.5021 9.93486 8.50383 9.93313 8.50555L7.0765 11.3622C6.79755 11.6411 6.34529 11.6411 6.06635 11.3622C5.7874 11.0832 5.7874 10.631 6.06635 10.352L7.70413 8.71425H0.857139C0.462649 8.71425 0.142853 8.39445 0.142853 7.99997Z"
-                                    fill="#262931" />
-                            </svg>
-                            <span>Авторизация</span>
-                        </a>
-                        <a href="tel:+ 375(44) 121 12 12" class="footer__tel">
-                            <img src="./image/smartphone.svg" alt="иконка телефона">
-                            + 375(44) 121 12 12
-                        </a>
-                        <a href="mailto:Moneyfinaid@gmail.com" class="footer__email">
-                            <img src="./image/message.svg" alt="иконка сообщения">
-                            Moneyfinaid@gmail.com
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__document">
-                    <a href="#">Пользовательское соглашение</a>
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Публичная оферта</a>
+        </section>
+        <section id="cripta-section" class="about-cripta">
+            <div class="container">
+                <div class="about-cripta__wrapper">
+                    <h2 class="about-cripta__title">
+                        О криптовалюте <span>просто</span>
+                    </h2>
+                    <p class="about-cripta__subtitle">
+                        Посмотрите видео и ещё раз закрепите свои знания.
+                        Уверены, что вы подчеркнёте <br />
+                        из этого видео что-то <span>полезное и новое</span> для
+                        себя.
+                    </p>
+                    <video
+                        class="about-cripta__video"
+                        poster="./image/aboutcripto.png"
+                        src="./image/aboutcripto.png"
+                    ></video>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="./js/index.js"></script>
-    <script src="./js/burger.js"></script>
-</body>
-
+        </section>
+        <section id="registration-section" class="start-earn">
+            <div class="container">
+                <div class="start-earn__wrapper">
+                    <h2 class="start-earn__title">
+                        Проходите простую регистрацию и
+                        <span>начинайте зарабатывать</span>
+                    </h2>
+                    <p class="start-earn__subtitle">
+                        <span>Никаких дополнительных проверок.</span> После
+                        регистрации вам будет доступен весь необходимый
+                        функционал по привлечению партнёров и регистрации
+                        клиентов.
+                    </p>
+                    <button class="start-earn__button">
+                        Зарегистрироваться
+                    </button>
+                    <a class="start-earn__enter" href="#">Войти в аккаунт</a>
+                </div>
+            </div>
+        </section>
+        <section class="support">
+            <div class="container">
+                <div class="support__wrapper">
+                    <h2 class="support__title">
+                        <span>Поддержка партнёров</span> нового <br />
+                        поколения
+                    </h2>
+                    <div class="edge__list">
+                        <div class="support__advantages">
+                            <p class="support__benefit">
+                                <span>Всегда на связи</span> и помогаем решить
+                                любой вопрос
+                            </p>
+                            <p class="support__benefit benefit-second">
+                                Замотивированы <span>на ваш успех</span> и
+                                профит
+                            </p>
+                            <p class="support__benefit">
+                                Привлекаем
+                                <span>технических специалистов</span> для
+                                нестандартных ситуаций
+                            </p>
+                        </div>
+                        <img
+                            class="support__img"
+                            src="./image/people.png"
+                            alt="изображение людей"
+                        />
+                        <div class="support__advantages">
+                            <p
+                                class="support__benefit privilege-item item__four"
+                            >
+                                Доступ к <span>полной статистике</span> по всем
+                                клиентам и партнерам
+                            </p>
+                            <p
+                                class="support__benefit privilege-item item__five"
+                            >
+                                <span>Индивидуальный подход</span> к каждому
+                                партнеру, учёт особенностей работы
+                            </p>
+                            <p
+                                class="support__benefit privilege-item item__six"
+                            >
+                                <span>Обучаем, делимся инсайтами</span> и
+                                помогаем достигать высоких результатов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study">
+            <div class="container">
+                <div class="study__wrapper">
+                    <h2 class="study__title">
+                        <span>Обучение</span> у наших партнеров
+                    </h2>
+                    <video
+                        poster="./image/fonds.png"
+                        src="./image/fonds.png"
+                    ></video>
+                </div>
+            </div>
+        </section>
+        <section id="popular-quastion" class="quastion">
+            <div class="container">
+                <div class="quastion__wrapper">
+                    <h2 class="quastion__title">
+                        <span>Ответы</span> на вопросы
+                    </h2>
+                    <div class="quastion__form">
+                        <div class="quastion__list">
+                            <details class="quastion__item" open>
+                                <summary class="quastion__describe">
+                                    Как я могу зарегистрировать своих клиентов в
+                                    системе?
+                                </summary>
+                                <hr class="quastion__line" />
+                                <p class="quastion__subtitle">
+                                    Для регистрации клиентов в системе
+                                    необходимо выполнить следующие шаги:
+                                </p>
+                                <ol class="answer-list">
+                                    <li class="answer-list__item">
+                                        Авторизоваться в личном кабинете.
+                                    </li>
+                                    <li class="answer-list__item">
+                                        Перейти в раздел "Мои клиенты".
+                                    </li>
+                                    <li class="answer-list__item">
+                                        Нажать на кнопку "Добавить клиента".
+                                    </li>
+                                    <li class="answer-list__item">
+                                        Заполнить необходимую информацию о
+                                        клиенте, такую как ФИО, контактные
+                                        данные, информацию о доходах и т.д
+                                    </li>
+                                    <li class="answer-list__item">
+                                        Нажать на кнопку "Сохранить".
+                                    </li>
+                                    <li class="answer-list__item">
+                                        Карточка нового клиента будет
+                                        отображаться в списке "Мои клиенты".
+                                    </li>
+                                </ol>
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Могут ли мои клиенты стать партнерами?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Сколько времени занимает перечисление
+                                    доходов моим партнерам?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Как я могу получить дополнительную поддержку
+                                    или помощь в работе с системой?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Как долго регистрируется клиент в системе?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Есть ли требования к клиентам для
+                                    использования сервиса?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                            <details class="quastion__item">
+                                <summary class="quastion__describe">
+                                    Как прекратить сотрудничество с Finaid?
+                                </summary>
+                                <hr class="quastion__line" />
+                            </details>
+                        </div>
+                        <form class="quastion__info" action="#">
+                            <h3 class="quastion__form-title">
+                                Остались вопросы?
+                            </h3>
+                            <p class="quastion__form-subtitle">
+                                Введите своё имя и телефон. Мы свяжемся с вами в
+                                течение 2 часов
+                            </p>
+                            <div class="quastion__record">
+                                <input
+                                    class="name"
+                                    type="text"
+                                    placeholder="Ваше имя"
+                                />
+                                <input
+                                    class="tel"
+                                    type="tel"
+                                    placeholder="+375 (_ _)  _ _ _ - _ _ - _ _"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                />
+                                <textarea
+                                    class="message-text"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Текст сообщения.."
+                                ></textarea>
+                                <button class="quastion__button">
+                                    Отправить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__menu">
+                        <div class="footer__copyright">
+                            <a href="#" class="logo logo__footer"
+                                ><img src="./image/logo.svg" alt="logo"
+                            /></a>
+                            <span class="logo__info"
+                                >Copyright © 2023 finaid</span
+                            >
+                        </div>
+                        <nav>
+                            <ul class="footer__navigation">
+                                <li class="footer__menu-item">О компании</li>
+                                <li class="footer__menu-item">
+                                    Как это работает?
+                                </li>
+                                <li class="footer__menu-item">
+                                    Для сотрудничества
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul class="footer__navigation">
+                                <li class="footer__menu-item">
+                                    О Криптовалюте
+                                </li>
+                                <li class="footer__menu-item">Поддержка</li>
+                                <li class="footer__menu-item">FAQ</li>
+                            </ul>
+                        </nav>
+                        <div class="footer__info">
+                            <a
+                                class="authorization authorization-footer"
+                                href="#"
+                            >
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10.602 15.8571H8.71428C8.31979 15.8571 8 15.5373 8 15.1428C8 14.7483 8.31979 14.4285 8.71428 14.4285H10.5714C11.3833 14.4285 11.9492 14.428 12.3898 14.392C12.8221 14.3567 13.0704 14.2908 13.2585 14.195C13.6618 13.9895 13.9896 13.6617 14.195 13.2585C14.2909 13.0704 14.3567 12.8221 14.392 12.3898C14.428 11.9492 14.4286 11.3833 14.4286 10.5714V5.42854C14.4286 4.61668 14.428 4.05074 14.392 3.61014C14.3567 3.17787 14.2909 2.92953 14.195 2.74141C13.9896 2.33821 13.6618 2.01039 13.2585 1.80495C13.0704 1.7091 12.8221 1.64327 12.3898 1.60795C11.9492 1.57195 11.3833 1.57139 10.5714 1.57139H8.71428C8.31979 1.57139 8 1.2516 8 0.857108C8 0.462619 8.31979 0.142822 8.71428 0.142822H10.602H10.6021C11.3762 0.142816 12.0005 0.14281 12.5062 0.184121C13.0268 0.226656 13.484 0.316522 13.9071 0.532085C14.5791 0.87449 15.1255 1.42085 15.4679 2.09286C15.6834 2.51592 15.7733 2.9732 15.8158 3.49381C15.8572 3.99943 15.8571 4.62383 15.8571 5.39796V10.602C15.8571 11.3761 15.8572 12.0005 15.8158 12.5061C15.7733 13.0267 15.6834 13.484 15.4679 13.9071C15.1255 14.5791 14.5791 15.1254 13.9071 15.4678C13.484 15.6834 13.0268 15.7733 12.5062 15.8158C12.0005 15.8571 11.3761 15.8571 10.602 15.8571ZM0.142853 7.99997C0.142853 7.60548 0.462649 7.28568 0.857139 7.28568H7.70413L6.06635 5.6479C5.7874 5.36895 5.7874 4.91669 6.06635 4.63775C6.34529 4.3588 6.79755 4.3588 7.0765 4.63775L9.93313 7.49438C9.93486 7.4961 9.93658 7.49783 9.93829 7.49957C10.0045 7.56696 10.0546 7.64422 10.0887 7.72655C10.1233 7.81015 10.1426 7.90175 10.1428 7.99782C10.1429 7.99854 10.1429 7.99925 10.1429 7.99997C10.1429 8.00068 10.1429 8.00139 10.1428 8.00211C10.1423 8.19613 10.0644 8.37196 9.93829 8.50036C9.93658 8.5021 9.93486 8.50383 9.93313 8.50555L7.0765 11.3622C6.79755 11.6411 6.34529 11.6411 6.06635 11.3622C5.7874 11.0832 5.7874 10.631 6.06635 10.352L7.70413 8.71425H0.857139C0.462649 8.71425 0.142853 8.39445 0.142853 7.99997Z"
+                                        fill="#262931"
+                                    />
+                                </svg>
+                                <span>Авторизация</span>
+                            </a>
+                            <a
+                                href="tel:+ 375(44) 121 12 12"
+                                class="footer__tel"
+                            >
+                                <img
+                                    src="./image/smartphone.svg"
+                                    alt="иконка телефона"
+                                />
+                                + 375(44) 121 12 12
+                            </a>
+                            <a
+                                href="mailto:Moneyfinaid@gmail.com"
+                                class="footer__email"
+                            >
+                                <img
+                                    src="./image/message.svg"
+                                    alt="иконка сообщения"
+                                />
+                                Moneyfinaid@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__document">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Публичная оферта</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/index.js"></script>
+        <script src="./js/burger.js"></script>
+    </body>
 </html>

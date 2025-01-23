@@ -1,4 +1,5 @@
 .header__wrapper {
+    padding: 12px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,14 +56,14 @@
 }
 
 .burger__menu {
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     position: relative;
     cursor: pointer;
     background: none;
 }
 
-.burger__menu>span {
+.burger__menu > span {
     width: 100%;
     display: block;
     height: 3px;
@@ -80,7 +81,7 @@
     position: absolute;
     content: '';
     display: block;
-    width: 32px;
+    width: 22px;
     height: 3px;
     background: black;
     transition: all .3s linear;

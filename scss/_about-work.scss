@@ -67,21 +67,21 @@
 }
 
 .stage-one {
-    flex: 0 1 280px;
+    flex: 1 1 280px;
     padding-top: 160px;
 }
 
 .stage-three {
-    flex: 0 1 280px;
+    flex: 1 1 280px;
     padding-top: 120px;
 }
 
 .stage-two {
-    flex: 0 1 280px;
+    flex: 1 1 280px;
 }
 
 .stage-last {
-    flex: 0 1 280px;
+    flex: 1 1 280px;
 }
 
 .step-one {
@@ -149,6 +149,12 @@
     .container {
         max-width: 992px;
     }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
 
     .scheme {
         align-content: center;
@@ -161,9 +167,13 @@
     .scheme__stage {
         flex-direction: row;
         gap: 16px;
-        flex: 0 1 280px;
-        justify-content: space-around;
+        flex: 1 1 296px;
+        justify-content: space-between;
         align-items: center;
+
+        & img {
+            max-width: 104px;
+        }
     }
 
     .step-one::after,
@@ -179,6 +189,16 @@
     .stage-three {
         padding-top: 0px;
     }
+
+    .scheme .scheme__title {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .scheme__subtitle {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -191,7 +211,7 @@
     }
 
     .about-work__wrapper {
-        padding: 64px 12px 47px 12px;
+        padding: 64px 0px 47px 0px;
     }
 
     .about-work__title {
@@ -206,17 +226,7 @@
     }
 
     .scheme__stage {
-        flex: 0 1 296px;
-    }
-
-    .scheme .scheme__title {
-        font-size: 14px;
-        line-height: 16.8px;
-    }
-
-    .scheme__subtitle {
-        font-size: 14px;
-        line-height: 18.2px;
+        flex: 1 1 296px;
     }
 
     .scheme {
