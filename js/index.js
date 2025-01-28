@@ -1,16 +1,37 @@
-// const button = document.querySelector(".register__enter")
-// const title = document.querySelector(".register__enter")
-// console.log(button);
-// button.addEventListener("click", function(){
-//     title.style.color = "red"
-// })
+"use strict"
+// let login = prompt("Введите логин", '')
+// let password = prompt("Введите пароль", '')
+// let dataLogin = 'admin';
+// let dataPassword = 12345;
+// if(login == dataLogin && password == dataPassword) {
+//     alert('Доступ разрешен')
+// } else {
+//     alert('Доступ запрещен')
+// }
 
-// const button = document.getElementsByTagName("a")
-// console.log(button)
-// const title = document.getElementById("titlespan")
-// console.log(button);
-// button.addEventListener("click", function(){
-//     title.style.color = "red"
-// })
+// //*Задача 1: Високосный год и магическая дата  
+// Напишите программу, которая:  
+// 1. Проверяет, является ли год високосным (делится на 4, но не на 100, если только не делится на 400).  
+// 2. Если год високосный, проверьте, равна ли дата "29 февраля".  
+// 3. Если оба условия верны, выведите "Магическая дата!", иначе "Обычная дата".*//
+
+
+
+let year = prompt('Какой сейчас год?', '');
+let yearLeap = (year % 4 == 0 && year % 100 != 0 && year  % 400 != 0);
+let date = prompt('Какое сегодня число?', '')
+let magicDate = "29 февраля";
+
+if(yearLeap){
+    if(date == magicDate) {
+        alert('Магическая дата!')
+    } else {
+        alert('Обычная дата!')
+    }
+} else {
+    alert('Год НЕ высокосный и дата обычная!')
+}
+
+
 
 
