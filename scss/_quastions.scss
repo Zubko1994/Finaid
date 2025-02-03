@@ -25,6 +25,7 @@
     font-weight: 400;
     line-height: 22.4px;
     color: #262931;
+    padding-right: 25px;
 }
 
 .quastion__item {
@@ -36,9 +37,10 @@
 .quastion__list {
     display: flex;
     flex-direction: column;
-    flex: 0 1 296px;
+    flex: 1 1 auto;
     gap: 16px;
-    min-width: 682px;
+    width: 100%;
+    max-width: 682px;
 }
 
 .quastion__line {
@@ -242,15 +244,22 @@ details[open] summary:before {
         max-width: 992px;
     }
 
-    .quastion__form {
-        flex-direction: column;
-        gap: 20px;
+    summary:before,
+    details[open] summary:before {
+        left: 600px;
+        left: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
     }
 
     summary:before,
     details[open] summary:before {
         position: absolute;
-        left: 97%;
+        left: 95%;
         padding-left: 5px;
     }
 }
@@ -264,6 +273,11 @@ details[open] summary:before {
         min-width: 296px;
     }
 
+    .quastion__form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .quastion__describe {
         padding-right: 20px;
     }
@@ -275,7 +289,7 @@ details[open] summary:before {
     }
 
     .quastion__wrapper {
-        padding: 10px 0px 120px 0px;
+        padding: 10px 0px 50px 0px;
     }
 
     .quastion__title {

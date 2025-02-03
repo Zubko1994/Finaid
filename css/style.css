@@ -307,7 +307,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  flex: 0 1 485px;
+  flex: 1 1 485px;
 }
 
 .register__field-h3 {
@@ -475,7 +475,6 @@
   }
   .register__partner {
     flex-direction: column;
-    gap: 40px;
     align-items: center;
     width: 100%;
   }
@@ -484,7 +483,9 @@
     align-items: center;
   }
   .register__info {
-    width: 70%;
+    width: 100%;
+    max-width: 485px;
+    flex: 1 1 auto;
   }
   .register__subtitle {
     width: 70%;
@@ -509,6 +510,7 @@
     font-size: 14px;
     line-height: 22.4px;
     margin-bottom: 24px;
+    text-align: left;
   }
   .register__wrapper {
     padding-top: 56px;
@@ -528,7 +530,6 @@
     width: 100%;
     gap: 18px;
     padding: 18px 12px;
-    flex: 0 1 241px;
   }
   .register__field-h3 {
     font-size: 16px;
@@ -1337,6 +1338,7 @@
   font-weight: 400;
   line-height: 22.4px;
   color: #262931;
+  padding-right: 25px;
 }
 
 .quastion__item {
@@ -1348,9 +1350,10 @@
 .quastion__list {
   display: flex;
   flex-direction: column;
-  flex: 0 1 296px;
+  flex: 1 1 auto;
   gap: 16px;
-  min-width: 682px;
+  width: 100%;
+  max-width: 682px;
 }
 
 .quastion__line {
@@ -1552,14 +1555,20 @@ details[open] summary:before {
   .container {
     max-width: 992px;
   }
-  .quastion__form {
-    flex-direction: column;
-    gap: 20px;
+  summary:before,
+  details[open] summary:before {
+    left: 600px;
+    left: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
   }
   summary:before,
   details[open] summary:before {
     position: absolute;
-    left: 97%;
+    left: 95%;
     padding-left: 5px;
   }
 }
@@ -1570,6 +1579,10 @@ details[open] summary:before {
   .quastion__list {
     min-width: 296px;
   }
+  .quastion__form {
+    flex-direction: column;
+    gap: 20px;
+  }
   .quastion__describe {
     padding-right: 20px;
   }
@@ -1579,7 +1592,7 @@ details[open] summary:before {
     max-width: 320px;
   }
   .quastion__wrapper {
-    padding: 10px 0px 120px 0px;
+    padding: 10px 0px 50px 0px;
   }
   .quastion__title {
     font-size: 18px;

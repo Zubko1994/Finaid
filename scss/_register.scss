@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    flex: 0 1 485px;
+    flex: 1 1 485px;
 }
 
 .register__field-h3 {
@@ -256,7 +256,7 @@
 
     .register__partner {
         flex-direction: column;
-        gap: 40px;
+        // gap: 40px;
         align-items: center;
         width: 100%;
     }
@@ -267,7 +267,9 @@
     }
 
     .register__info {
-        width: 70%;
+        width: 100%;
+        max-width: 485px;
+        flex: 1 1 auto;
     }
 
     .register__subtitle {
@@ -296,6 +298,7 @@
         font-size: 14px;
         line-height: 22.4px;
         margin-bottom: 24px;
+        text-align: left;
     }
 
     .register__wrapper {
@@ -319,7 +322,7 @@
         width: 100%;
         gap: 18px;
         padding: 18px 12px;
-        flex: 0 1 241px;
+        // flex: 0 1 241px;
     }
 
     .register__field-h3 {
