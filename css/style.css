@@ -1338,11 +1338,11 @@
   font-weight: 400;
   line-height: 22.4px;
   color: #262931;
-  padding-right: 25px;
+  margin-right: 20px;
+  padding: 24px 30px 24px 24px;
 }
 
 .quastion__item {
-  padding: 24px;
   background-color: #ffffff;
   border-radius: 16px;
 }
@@ -1359,6 +1359,9 @@
 .quastion__line {
   border: solid 1px #dcdde5;
   margin-bottom: 16px;
+  padding-left: 12px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .quastion__subtitle {
@@ -1367,10 +1370,13 @@
   font-weight: 400;
   line-height: 25.6px;
   color: #262931;
+  padding: 12px 24px 12px 24px;
 }
 
 .answer-list {
-  padding-left: 24px;
+  padding-left: 36px;
+  padding-right: 24px;
+  padding-bottom: 24px;
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -1393,7 +1399,7 @@ details[open] summary:before {
 }
 
 details[open] .quastion__describe {
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 summary:before,
@@ -1411,7 +1417,6 @@ details[open] summary:before {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
-  flex: 1 1 296px;
 }
 
 .quastion__form {
@@ -1551,6 +1556,16 @@ details[open] summary:before {
   box-shadow: 0px 0px 10px 0px #1b5396 inset;
 }
 
+@media (max-width: 1160px) {
+  .container {
+    max-width: 1005px;
+  }
+  summary:before,
+  details[open] summary:before {
+    left: 610px;
+    left: 95%;
+  }
+}
 @media (max-width: 1050px) {
   .container {
     max-width: 992px;
@@ -1602,10 +1617,12 @@ details[open] summary:before {
   .quastion__describe {
     font-size: 14px;
     line-height: 19.6px;
+    padding: 12px 30px 12px 12px;
   }
   .quastion__subtitle {
     font-size: 14px;
     line-height: 22.4px;
+    padding: 12px;
   }
   .answer-list {
     font-size: 14px;
@@ -1620,7 +1637,6 @@ details[open] summary:before {
   .quastion__info {
     padding: 18px 12px;
     margin-top: 32px;
-    flex: 1 1 296px;
   }
   .quastion__form-title {
     font-size: 16px;
